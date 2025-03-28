@@ -122,7 +122,7 @@ if page == "score":
             mins, secs = divmod(int(remaining.total_seconds()), 60)
             st.markdown(f"<h2 style='color:#d11b79;'>⏳ {mins:02d}:{secs:02d}</h2>", unsafe_allow_html=True)
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
     elif not st.session_state.timer_running:
         st.markdown("<h2 style='color:#888;'>⏳ 02:00</h2>", unsafe_allow_html=True)
 
